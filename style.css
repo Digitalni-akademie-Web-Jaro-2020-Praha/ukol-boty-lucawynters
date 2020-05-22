@@ -44,6 +44,8 @@ a:link,
   display: inline-block;
   border-radius: 5px;
   box-shadow: 0px 2px lightgrey;
+  position: absolute;
+  top: 370px;
 }
 .nazev,
 .tlacitko,
@@ -51,18 +53,104 @@ a:link,
   text-transform: uppercase;
 }
 .produkt,
-.popis,
 .slogan,
-.parametr,
-li {
+.parametr {
   font-size: 16px;
   font-weight: 500;
 }
 /*sekce*/
 .zbozi {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 670px;
   height: 440px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 3px 3px 10px grey;
+  border-radius: 10px;
+}
+
+/*leva*/
+.vizual {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(6, 215, 193, 1) 0%,
+    rgba(80, 204, 73, 1) 100%
+  );
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 30px;
+  width: 50%;
+}
+
+.slogan {
+  color: white;
+  padding-top: 10px;
+}
+.bota {
+  position: relative;
+  right: 100px;
+}
+.cenovka {
+  color: white;
+  text-align: right;
+  position: relative;
+  bottom: 80px;
+}
+.cena {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.zaruka {
+  font-size: 12px;
+  font-weight: 400;
+}
+/*prava*/
+
+.detaily {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+}
+
+.nazev {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.produkt {
+  color: #959595;
+}
+
+.popis {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #06d7c1;
+}
+
+.parametr {
+  padding-top: 20px;
+}
+
+.velikosti {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  position: relative;
+  left: -37px;
+}
+
+li:hover {
+  color: #f15f42;
+  border: 1px #f15f42 solid;
+  border-radius: 50px;
+  padding: 2px;
+  cursor: pointer;
 }
