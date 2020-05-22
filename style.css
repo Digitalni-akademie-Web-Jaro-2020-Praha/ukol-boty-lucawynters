@@ -1,0 +1,60 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  background-color: #f5f5f5;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+h1,
+div {
+  font-family: "Rubik", sans-serif;
+}
+
+a:link,
+:visited,
+:active {
+  background-color: #f15f42;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 2px lightgrey;
+}
+.nazev,
+.tlacitko,
+.parametr {
+  text-transform: uppercase;
+}
+.produkt,
+.popis,
+.slogan,
+.parametr,
+li {
+  font-size: 16px;
+  font-weight: 500;
+}
