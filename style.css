@@ -31,3 +31,8 @@ h1,
 div {
   font-family: "Rubik", sans-serif;
 }
+
+.zbozi {
+  display: flex;
+  width: 670 px;
+}
