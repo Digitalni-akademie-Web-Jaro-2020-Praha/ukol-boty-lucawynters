@@ -73,7 +73,6 @@ a:link,
 .vizual {
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0) 0%,
     rgba(6, 215, 193, 1) 0%,
     rgba(80, 204, 73, 1) 100%
   );
