@@ -1,0 +1,126 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  background-color: #f5f5f5;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+h1,
+div {
+  font-family: "Rubik", sans-serif;
+}
+
+a:link,
+:visited,
+:active {
+  background-color: #f15f42;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 2px lightgrey;
+}
+.nazev,
+.tlacitko,
+.parametr {
+  text-transform: uppercase;
+}
+
+.produkt,
+.popis,
+.slogan,
+.parametr,
+li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*sekce*/
+.zbozi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 670px;
+  height: 440px;
+}
+.produkt {
+  color: #959595;
+}
+
+.slogan {
+  color: white;
+}
+
+.cenovka {
+  color: white;
+  text-align: right;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.cena {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.zaruka {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.vizual {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(6, 215, 193, 1) 0%,
+    rgba(80, 204, 73, 1) 100%
+  );
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 30px;
+}
+
+/*pravá půlka*/
+.detaily {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+}
+.nazev {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.velikosti {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
